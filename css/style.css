@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.search-box {
+    width: 50px;
+}
+.search-box img {
+    width: 100%;
+}
+
+.btns-wrapper {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.input-wrapper {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.item-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
