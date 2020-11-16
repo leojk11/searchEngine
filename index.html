@@ -23,75 +23,180 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
 </head>
 
 <body>
-
+  <div class="page-mask"></div> <!-- page mask -->
+  
   <div class="btns-wrapper">
     <a
       href="#"
-      class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
-      data-filter="all"
+      class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 car-type-btn"
+      id="all"
     >
       all</a
     >
     <a
       href="#"
-      class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
-      data-filter="bmw"
+      class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 car-type-btn"
+      id="bmw"
       >bmw</a
     >
     <a
       href="#"
-      class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
-      data-filter="audi"
+      class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 car-type-btn"
+      id="audi"
       >audi</a
     >
     <a
       href="#"
-      class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
-      data-filter="mercedes-benz"
+      class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 car-type-btn"
+      id="mercedes-benz"
       >mercedes-benz</a
     >
     <a
       href="#"
-      class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
-      data-filter="toyota"
+      class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 car-type-btn"
+      id="toyota"
       >toyota</a
     >
     <a
       href="#"
-      class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
-      data-filter="tesla"
+      class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 car-type-btn"
+      id="tesla"
       >tesla</a
     >
   </div> <!-- btns wrapper -->
 
   <div class="input-wrapper">
-    <form>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text search-box" id="search-icon"
-            ><img src="img/search.png"></i
-          ></span>
-        </div>
-        <input
-          type="text"
-          class="form-control"
-          placeholder="item...."
-          id="search-item"
-        />
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text search-box" id="search-icon"
+          ><img src="img/search.png"></i
+        ></span>
       </div>
-    </form>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="item...."
+        id="search-input"
+      />
+    </div>
   </div>
-
+  <br>
   <div class="items-wrapper">
-    <div class="single-item">
-      <div class="item-image"></div> <!-- item image -->
+    <div class="single-item bmw">
+      <div class="item-model">BMW</div> <!-- item model -->
+      <div class="item-name">2 Series</div> <!-- item desc -->
 
-      <div class="item-desc"></div> <!-- item desc -->
+      <div class="item-image"><img class="car-img" src="img/car images/m2.png"></div> <!-- item image -->
+
+      <div class="item-price-label">starting at</div> <!-- item desc -->
+      <div class="item-price">$35.300</div> <!-- item price -->
+    </div> <!-- single item -->
+    <div class="single-item bmw">
+      <div class="item-model">BMW</div> <!-- item model -->
+      <div class="item-name">X5</div> <!-- item desc -->
+
+      <div class="item-image"><img class="car-img" src="img/car images/m50i.png"></div> <!-- item image -->
+
+      <div class="item-price-label">starting at</div> <!-- item desc -->
+      <div class="item-price">$82.150</div> <!-- item price -->
+    </div> <!-- single item -->
+
+    <!-- tesla -->
+    <div class="single-item tesla">
+      <div class="item-model">Tesla</div> <!-- item model -->
+      <div class="item-name">Model 3 performance</div> <!-- item desc -->
+
+      <div class="item-image"><img class="car-img" src="img/car images/3performance.png"></div> <!-- item image -->
+
+      <div class="item-price-label">starting at</div> <!-- item desc -->
+      <div class="item-price">$56.990</div> <!-- item price -->
+    </div> <!-- single item -->
+    <div class="single-item tesla">
+      <div class="item-model">Tesla</div> <!-- item model -->
+      <div class="item-name">Model S90D</div> <!-- item desc -->
+
+      <div class="item-image"><img class="car-img" src="img/car images/s90d.png"></div> <!-- item image -->
+
+      <div class="item-price-label">starting at</div> <!-- item desc -->
+      <div class="item-price">$87.500</div> <!-- item price -->
+    </div> <!-- single item -->
+
+    <!-- mecedes -->
+    <div class="single-item mercedes-benz mercedes">
+      <div class="item-model">Mercedes-Benz</div> <!-- item model -->
+      <div class="item-name">G-class AMG G63</div> <!-- item desc -->
+
+      <div class="item-image"><img class="car-img" src="img/car images/g63.png"></div> <!-- item image -->
+
+      <div class="item-price-label">starting at</div> <!-- item desc -->
+      <div class="item-price">$156.450</div> <!-- item price -->
+    </div> <!-- single item -->
+    <div class="single-item mercedes-benz mercedes">
+      <div class="item-model">Mercedes-Benz</div> <!-- item model -->
+      <div class="item-name">S-class S450</div> <!-- item desc -->
+
+      <div class="item-image"><img class="car-img" src="img/car images/s450.png"></div> <!-- item image -->
+
+      <div class="item-price-label">starting at</div> <!-- item desc -->
+      <div class="item-price">$94.250</div> <!-- item price -->
+    </div> <!-- single item -->
+
+    <!-- audi -->
+    <div class="single-item audi">
+      <div class="item-model">Audi</div> <!-- item model -->
+      <div class="item-name">A3 2.0T</div> <!-- item desc -->
+
+      <div class="item-image"><img class="car-img" src="img/car images/20t.png"></div> <!-- item image -->
+
+      <div class="item-price-label">starting at</div> <!-- item desc -->
+      <div class="item-price">$33.300</div> <!-- item price -->
+    </div> <!-- single item -->
+    <div class="single-item audi">
+      <div class="item-model">Audi</div> <!-- item model -->
+      <div class="item-name">A7 3.0T</div> <!-- item desc -->
+
+      <div class="item-image"><img class="car-img" src="img/car images/30t.png"></div> <!-- item image -->
+
+      <div class="item-price-label">starting at</div> <!-- item desc -->
+      <div class="item-price">$69.000</div> <!-- item price -->
+    </div> <!-- single item -->
+
+    <!-- toyota -->
+    <div class="single-item toyota">
+      <div class="item-model">Toyota</div> <!-- item model -->
+      <div class="item-name">Prius XLE</div> <!-- item desc -->
+
+      <div class="item-image"><img class="car-img" src="img/car images/priusxle.png"></div> <!-- item image -->
+
+      <div class="item-price-label">starting at</div> <!-- item desc -->
+      <div class="item-price">$28.375</div> <!-- item price -->
+    </div> <!-- single item -->
+    <div class="single-item toyota">
+      <div class="item-model">Toyota</div> <!-- item model -->
+      <div class="item-name">Supra 3.0</div> <!-- item desc -->
+
+      <div class="item-image"><img class="car-img" src="img/car images/supra30.png"></div> <!-- item image -->
+
+      <div class="item-price-label">starting at</div> <!-- item desc -->
+      <div class="item-price">$49.990</div> <!-- item price -->
     </div> <!-- single item -->
   </div> <!-- items wrapper -->
+
+  <div class="popup-wrapper">
+    <div class="popup">
+      <div class="popup-elements">
+        <div class="left-btn arrow-btn"><h1><</h1></div> <!-- left btn -->
+
+        <div class="big-image"><img class="big-img" src="img/car images/supra30.png"></div> <!-- big image -->
+
+        <div class="right-btn arrow-btn"><h1>></h1></div> <!-- right btn-->
+      </div> <!-- popup elements -->
+    </div> <!-- popup -->
+  </div> <!-- popup wrapper -->
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -99,6 +204,10 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
+  <script src="/js/main.js"></script>
+
 </body>
 
 </html>
